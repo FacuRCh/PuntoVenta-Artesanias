@@ -118,7 +118,7 @@ namespace CapaPresentacion
             // menuclientes
             // 
             this.menuclientes.AutoSize = false;
-            this.menuclientes.Icon = FontAwesome.Sharp.IconChar.Glass;
+            this.menuclientes.Icon = FontAwesome.Sharp.IconChar.UniversalAccess;
             this.menuclientes.IconColor = System.Drawing.Color.Black;
             this.menuclientes.IconSize = 50;
             this.menuclientes.Image = ((System.Drawing.Image)(resources.GetObject("menuclientes.Image")));
@@ -202,7 +202,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.menu);
             this.Controls.Add(this.menutitulo);
             this.MainMenuStrip = this.menu;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.menu.ResumeLayout(false);
