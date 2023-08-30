@@ -37,9 +37,10 @@ namespace CapaPresentacion
             this.menucompras = new FontAwesome.Sharp.IconMenuItem();
             this.menuclientes = new FontAwesome.Sharp.IconMenuItem();
             this.menuproveedores = new FontAwesome.Sharp.IconMenuItem();
-            this.menureportes = new FontAwesome.Sharp.IconMenuItem();
+            this.menuacercade = new FontAwesome.Sharp.IconMenuItem();
             this.menutitulo = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
+            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +53,8 @@ namespace CapaPresentacion
             this.menucompras,
             this.menuclientes,
             this.menuproveedores,
-            this.menureportes});
+            this.iconMenuItem1,
+            this.menuacercade});
             this.menu.Location = new System.Drawing.Point(0, 50);
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(800, 73);
@@ -137,18 +139,18 @@ namespace CapaPresentacion
             this.menuproveedores.Text = "Proveedores";
             this.menuproveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // menureportes
+            // menuacercade
             // 
-            this.menureportes.AutoSize = false;
-            this.menureportes.Icon = FontAwesome.Sharp.IconChar.Compass;
-            this.menureportes.IconColor = System.Drawing.Color.Black;
-            this.menureportes.IconSize = 50;
-            this.menureportes.Image = ((System.Drawing.Image)(resources.GetObject("menureportes.Image")));
-            this.menureportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.menureportes.Name = "menureportes";
-            this.menureportes.Size = new System.Drawing.Size(80, 69);
-            this.menureportes.Text = "Reportes";
-            this.menureportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuacercade.AutoSize = false;
+            this.menuacercade.Icon = FontAwesome.Sharp.IconChar.Compass;
+            this.menuacercade.IconColor = System.Drawing.Color.Black;
+            this.menuacercade.IconSize = 50;
+            this.menuacercade.Image = ((System.Drawing.Image)(resources.GetObject("menuacercade.Image")));
+            this.menuacercade.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menuacercade.Name = "menuacercade";
+            this.menuacercade.Size = new System.Drawing.Size(80, 69);
+            this.menuacercade.Text = "Acerca de";
+            this.menuacercade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // menutitulo
             // 
@@ -172,6 +174,19 @@ namespace CapaPresentacion
             this.label1.Size = new System.Drawing.Size(241, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "Sistema de Ventas";
+            // 
+            // iconMenuItem1
+            // 
+            this.iconMenuItem1.AutoSize = false;
+            this.iconMenuItem1.Icon = FontAwesome.Sharp.IconChar.Compass;
+            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem1.IconSize = 50;
+            this.iconMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("iconMenuItem1.Image")));
+            this.iconMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.iconMenuItem1.Name = "iconMenuItem1";
+            this.iconMenuItem1.Size = new System.Drawing.Size(80, 69);
+            this.iconMenuItem1.Text = "Reportes";
+            this.iconMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // Form1
             // 
@@ -201,8 +216,9 @@ namespace CapaPresentacion
         private FontAwesome.Sharp.IconMenuItem menucompras;
         private FontAwesome.Sharp.IconMenuItem menuclientes;
         private FontAwesome.Sharp.IconMenuItem menuproveedores;
-        private FontAwesome.Sharp.IconMenuItem menureportes;
+        private FontAwesome.Sharp.IconMenuItem menuacercade;
         private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
     }
 }
 
