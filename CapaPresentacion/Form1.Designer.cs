@@ -37,10 +37,10 @@ namespace CapaPresentacion
             this.menucompras = new FontAwesome.Sharp.IconMenuItem();
             this.menuclientes = new FontAwesome.Sharp.IconMenuItem();
             this.menuproveedores = new FontAwesome.Sharp.IconMenuItem();
+            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.menuacercade = new FontAwesome.Sharp.IconMenuItem();
             this.menutitulo = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
-            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,10 +139,23 @@ namespace CapaPresentacion
             this.menuproveedores.Text = "Proveedores";
             this.menuproveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // iconMenuItem1
+            // 
+            this.iconMenuItem1.AutoSize = false;
+            this.iconMenuItem1.Icon = FontAwesome.Sharp.IconChar.Compass;
+            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem1.IconSize = 50;
+            this.iconMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("iconMenuItem1.Image")));
+            this.iconMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.iconMenuItem1.Name = "iconMenuItem1";
+            this.iconMenuItem1.Size = new System.Drawing.Size(80, 69);
+            this.iconMenuItem1.Text = "Reportes";
+            this.iconMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // menuacercade
             // 
             this.menuacercade.AutoSize = false;
-            this.menuacercade.Icon = FontAwesome.Sharp.IconChar.Compass;
+            this.menuacercade.Icon = FontAwesome.Sharp.IconChar.InfoCircle;
             this.menuacercade.IconColor = System.Drawing.Color.Black;
             this.menuacercade.IconSize = 50;
             this.menuacercade.Image = ((System.Drawing.Image)(resources.GetObject("menuacercade.Image")));
@@ -174,19 +187,6 @@ namespace CapaPresentacion
             this.label1.Size = new System.Drawing.Size(241, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "Sistema de Ventas";
-            // 
-            // iconMenuItem1
-            // 
-            this.iconMenuItem1.AutoSize = false;
-            this.iconMenuItem1.Icon = FontAwesome.Sharp.IconChar.Compass;
-            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem1.IconSize = 50;
-            this.iconMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("iconMenuItem1.Image")));
-            this.iconMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.iconMenuItem1.Name = "iconMenuItem1";
-            this.iconMenuItem1.Size = new System.Drawing.Size(80, 69);
-            this.iconMenuItem1.Text = "Reportes";
-            this.iconMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // Form1
             // 
