@@ -27,17 +27,7 @@ namespace CapaPresentacion
             Form1 form = new Form1();
             form.Show();
             this.Hide();
-
-            form.FormClosing += frm_closing;
         }
-        
-        private void frm_closing(object sender, FormClosingEventArgs e)
-        {
-            txtdocumento.Text = "";
-            txtcontraseña.Text = "";
-            this.Show();
-        }
-
     }
 
 

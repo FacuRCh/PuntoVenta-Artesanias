@@ -35,7 +35,7 @@ namespace CapaPresentacion
             this.btncancelar = new FontAwesome.Sharp.IconButton();
             this.lnrodocumento = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtdocumento = new System.Windows.Forms.TextBox();
+            this.txtingresar = new System.Windows.Forms.TextBox();
             this.txtcontraseña = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -110,12 +110,12 @@ namespace CapaPresentacion
             this.label2.TabIndex = 4;
             this.label2.Text = "Contraseña";
             // 
-            // txtdocumento
+            // txtingresar
             // 
-            this.txtdocumento.Location = new System.Drawing.Point(276, 43);
-            this.txtdocumento.Name = "txtdocumento";
-            this.txtdocumento.Size = new System.Drawing.Size(238, 20);
-            this.txtdocumento.TabIndex = 5;
+            this.txtingresar.Location = new System.Drawing.Point(276, 43);
+            this.txtingresar.Name = "txtingresar";
+            this.txtingresar.Size = new System.Drawing.Size(238, 20);
+            this.txtingresar.TabIndex = 5;
             // 
             // txtcontraseña
             // 
@@ -132,7 +132,7 @@ namespace CapaPresentacion
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(551, 226);
             this.Controls.Add(this.txtcontraseña);
-            this.Controls.Add(this.txtdocumento);
+            this.Controls.Add(this.txtingresar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lnrodocumento);
             this.Controls.Add(this.btncancelar);
@@ -155,7 +155,7 @@ namespace CapaPresentacion
         private FontAwesome.Sharp.IconButton btncancelar;
         private System.Windows.Forms.Label lnrodocumento;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtdocumento;
+        private System.Windows.Forms.TextBox txtingresar;
         private System.Windows.Forms.TextBox txtcontraseña;
     }
 }
