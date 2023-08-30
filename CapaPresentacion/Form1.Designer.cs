@@ -65,7 +65,7 @@ namespace CapaPresentacion
             // menuusuario
             // 
             this.menuusuario.AutoSize = false;
-            this.menuusuario.Icon = FontAwesome.Sharp.IconChar.Compass;
+            this.menuusuario.Icon = FontAwesome.Sharp.IconChar.UserPlus;
             this.menuusuario.IconColor = System.Drawing.Color.Black;
             this.menuusuario.IconSize = 50;
             this.menuusuario.Image = ((System.Drawing.Image)(resources.GetObject("menuusuario.Image")));
@@ -78,7 +78,7 @@ namespace CapaPresentacion
             // menumantenedor
             // 
             this.menumantenedor.AutoSize = false;
-            this.menumantenedor.Icon = FontAwesome.Sharp.IconChar.Compass;
+            this.menumantenedor.Icon = FontAwesome.Sharp.IconChar.Cogs;
             this.menumantenedor.IconColor = System.Drawing.Color.Black;
             this.menumantenedor.IconSize = 50;
             this.menumantenedor.Image = ((System.Drawing.Image)(resources.GetObject("menumantenedor.Image")));
@@ -91,7 +91,7 @@ namespace CapaPresentacion
             // menuventas
             // 
             this.menuventas.AutoSize = false;
-            this.menuventas.Icon = FontAwesome.Sharp.IconChar.Compass;
+            this.menuventas.Icon = FontAwesome.Sharp.IconChar.Tags;
             this.menuventas.IconColor = System.Drawing.Color.Black;
             this.menuventas.IconSize = 50;
             this.menuventas.Image = ((System.Drawing.Image)(resources.GetObject("menuventas.Image")));
@@ -104,7 +104,7 @@ namespace CapaPresentacion
             // menucompras
             // 
             this.menucompras.AutoSize = false;
-            this.menucompras.Icon = FontAwesome.Sharp.IconChar.Compass;
+            this.menucompras.Icon = FontAwesome.Sharp.IconChar.ShoppingCart;
             this.menucompras.IconColor = System.Drawing.Color.Black;
             this.menucompras.IconSize = 50;
             this.menucompras.Image = ((System.Drawing.Image)(resources.GetObject("menucompras.Image")));
@@ -117,7 +117,7 @@ namespace CapaPresentacion
             // menuclientes
             // 
             this.menuclientes.AutoSize = false;
-            this.menuclientes.Icon = FontAwesome.Sharp.IconChar.Compass;
+            this.menuclientes.Icon = FontAwesome.Sharp.IconChar.Glass;
             this.menuclientes.IconColor = System.Drawing.Color.Black;
             this.menuclientes.IconSize = 50;
             this.menuclientes.Image = ((System.Drawing.Image)(resources.GetObject("menuclientes.Image")));
@@ -130,7 +130,7 @@ namespace CapaPresentacion
             // menuproveedores
             // 
             this.menuproveedores.AutoSize = false;
-            this.menuproveedores.Icon = FontAwesome.Sharp.IconChar.Compass;
+            this.menuproveedores.Icon = FontAwesome.Sharp.IconChar.Check;
             this.menuproveedores.IconColor = System.Drawing.Color.Black;
             this.menuproveedores.IconSize = 50;
             this.menuproveedores.Image = ((System.Drawing.Image)(resources.GetObject("menuproveedores.Image")));
@@ -143,7 +143,7 @@ namespace CapaPresentacion
             // iconMenuItem1
             // 
             this.iconMenuItem1.AutoSize = false;
-            this.iconMenuItem1.Icon = FontAwesome.Sharp.IconChar.Laptop;
+            this.iconMenuItem1.Icon = FontAwesome.Sharp.IconChar.BarChart;
             this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem1.IconSize = 50;
             this.iconMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("iconMenuItem1.Image")));
@@ -200,7 +200,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.menu);
             this.Controls.Add(this.menutitulo);
             this.MainMenuStrip = this.menu;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.menu.ResumeLayout(false);
@@ -223,6 +223,8 @@ namespace CapaPresentacion
         private FontAwesome.Sharp.IconMenuItem menuacercade;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
+
+        
     }
 }
 
