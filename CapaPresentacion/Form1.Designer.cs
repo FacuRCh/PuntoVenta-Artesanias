@@ -226,7 +226,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
 
-        
+
     }
 }
 
