@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    public class Permiso
+    public class Categoria
     {
-        public int IdPermiso { get; set; } 
-        public Rol IdRol { get; set; }
-        public string NombreMenu { get; set; }
+        public int IdCategoria { get; set; }
+        public string Descripcion { get; set; }
+        public bool Estado { get; set; }
         public string FechaRegistro { get; set; }
     }
 }
