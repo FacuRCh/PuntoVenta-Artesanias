@@ -56,10 +56,10 @@ namespace CapaPresentacion
             this.menuproveedores,
             this.iconMenuItem1,
             this.menuacercade});
-            this.menu.Location = new System.Drawing.Point(0, 62);
+            this.menu.Location = new System.Drawing.Point(0, 50);
             this.menu.Name = "menu";
-            this.menu.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(1067, 73);
+            this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menu.Size = new System.Drawing.Size(800, 73);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -174,9 +174,9 @@ namespace CapaPresentacion
             this.menutitulo.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menutitulo.Location = new System.Drawing.Point(0, 0);
             this.menutitulo.Name = "menutitulo";
-            this.menutitulo.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menutitulo.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menutitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menutitulo.Size = new System.Drawing.Size(1067, 62);
+            this.menutitulo.Size = new System.Drawing.Size(800, 50);
             this.menutitulo.TabIndex = 1;
             this.menutitulo.Text = "menuStrip2";
             // 
@@ -186,24 +186,23 @@ namespace CapaPresentacion
             this.label1.BackColor = System.Drawing.Color.SteelBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(16, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(302, 39);
+            this.label1.Size = new System.Drawing.Size(241, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "Sistema de Ventas";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menu);
             this.Controls.Add(this.menutitulo);
             this.MainMenuStrip = this.menu;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();

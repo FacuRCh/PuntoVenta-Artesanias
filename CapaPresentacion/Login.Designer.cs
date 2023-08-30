@@ -53,6 +53,7 @@ namespace CapaPresentacion
             // btningresar
             // 
             this.btningresar.BackColor = System.Drawing.Color.Green;
+            this.btningresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btningresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btningresar.ForeColor = System.Drawing.SystemColors.Control;
@@ -73,6 +74,7 @@ namespace CapaPresentacion
             // btncancelar
             // 
             this.btncancelar.BackColor = System.Drawing.Color.Red;
+            this.btncancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancelar.ForeColor = System.Drawing.SystemColors.Control;
