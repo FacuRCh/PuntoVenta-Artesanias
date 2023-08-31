@@ -12,7 +12,8 @@ namespace CapaEntidad
         public Usuario IdUsuario { get; set; }
         public Proveedor IdProveedor { get; set; }
         public string Documento { get; set; }
-        public string NombreCompleto { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido {get;set;}
         public string Correo { get; set; }
         public string Telefono { get; set; }
         public decimal MontoTotal { get; set; }
