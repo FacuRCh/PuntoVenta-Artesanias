@@ -36,20 +36,20 @@ namespace CapaPresentacion
             this.submenucategoria = new FontAwesome.Sharp.IconMenuItem();
             this.submenuproducto = new FontAwesome.Sharp.IconMenuItem();
             this.menuventas = new FontAwesome.Sharp.IconMenuItem();
+            this.submenuregistrarventa = new FontAwesome.Sharp.IconMenuItem();
+            this.submenuverdetalleventa = new FontAwesome.Sharp.IconMenuItem();
             this.menucompras = new FontAwesome.Sharp.IconMenuItem();
+            this.submenuregistrarcompra = new FontAwesome.Sharp.IconMenuItem();
+            this.submenuverdetallecompra = new FontAwesome.Sharp.IconMenuItem();
             this.menuclientes = new FontAwesome.Sharp.IconMenuItem();
             this.menuproveedores = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
+            this.menureportes = new FontAwesome.Sharp.IconMenuItem();
             this.menuacercade = new FontAwesome.Sharp.IconMenuItem();
             this.menutitulo = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
             this.lUsuario = new System.Windows.Forms.Label();
             this.lblusuario = new System.Windows.Forms.Label();
             this.contenedor = new System.Windows.Forms.Panel();
-            this.submenuregistrarventa = new FontAwesome.Sharp.IconMenuItem();
-            this.submenuverdetalleventa = new FontAwesome.Sharp.IconMenuItem();
-            this.submenuregistrarcompra = new FontAwesome.Sharp.IconMenuItem();
-            this.submenuverdetallecompra = new FontAwesome.Sharp.IconMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +63,7 @@ namespace CapaPresentacion
             this.menucompras,
             this.menuclientes,
             this.menuproveedores,
-            this.iconMenuItem1,
+            this.menureportes,
             this.menuacercade});
             this.menu.Location = new System.Drawing.Point(0, 50);
             this.menu.Name = "menu";
@@ -109,7 +109,7 @@ namespace CapaPresentacion
             this.submenucategoria.IconSize = 16;
             this.submenucategoria.Image = ((System.Drawing.Image)(resources.GetObject("submenucategoria.Image")));
             this.submenucategoria.Name = "submenucategoria";
-            this.submenucategoria.Size = new System.Drawing.Size(184, 26);
+            this.submenucategoria.Size = new System.Drawing.Size(125, 22);
             this.submenucategoria.Text = "Categoria";
             this.submenucategoria.Click += new System.EventHandler(this.submenucategoria_Click);
             // 
@@ -120,7 +120,7 @@ namespace CapaPresentacion
             this.submenuproducto.IconSize = 16;
             this.submenuproducto.Image = ((System.Drawing.Image)(resources.GetObject("submenuproducto.Image")));
             this.submenuproducto.Name = "submenuproducto";
-            this.submenuproducto.Size = new System.Drawing.Size(184, 26);
+            this.submenuproducto.Size = new System.Drawing.Size(125, 22);
             this.submenuproducto.Text = "Producto";
             this.submenuproducto.Click += new System.EventHandler(this.submenuproducto_Click);
             // 
@@ -140,6 +140,28 @@ namespace CapaPresentacion
             this.menuventas.Text = "Ventas";
             this.menuventas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // submenuregistrarventa
+            // 
+            this.submenuregistrarventa.Icon = FontAwesome.Sharp.IconChar.None;
+            this.submenuregistrarventa.IconColor = System.Drawing.Color.Black;
+            this.submenuregistrarventa.IconSize = 16;
+            this.submenuregistrarventa.Image = ((System.Drawing.Image)(resources.GetObject("submenuregistrarventa.Image")));
+            this.submenuregistrarventa.Name = "submenuregistrarventa";
+            this.submenuregistrarventa.Size = new System.Drawing.Size(129, 22);
+            this.submenuregistrarventa.Text = "Registrar";
+            this.submenuregistrarventa.Click += new System.EventHandler(this.submenuregistrarventa_Click);
+            // 
+            // submenuverdetalleventa
+            // 
+            this.submenuverdetalleventa.Icon = FontAwesome.Sharp.IconChar.None;
+            this.submenuverdetalleventa.IconColor = System.Drawing.Color.Black;
+            this.submenuverdetalleventa.IconSize = 16;
+            this.submenuverdetalleventa.Image = ((System.Drawing.Image)(resources.GetObject("submenuverdetalleventa.Image")));
+            this.submenuverdetalleventa.Name = "submenuverdetalleventa";
+            this.submenuverdetalleventa.Size = new System.Drawing.Size(129, 22);
+            this.submenuverdetalleventa.Text = "Ver Detalle";
+            this.submenuverdetalleventa.Click += new System.EventHandler(this.submenuverdetalleventa_Click);
+            // 
             // menucompras
             // 
             this.menucompras.AutoSize = false;
@@ -155,6 +177,28 @@ namespace CapaPresentacion
             this.menucompras.Size = new System.Drawing.Size(80, 69);
             this.menucompras.Text = "Compras";
             this.menucompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // submenuregistrarcompra
+            // 
+            this.submenuregistrarcompra.Icon = FontAwesome.Sharp.IconChar.None;
+            this.submenuregistrarcompra.IconColor = System.Drawing.Color.Black;
+            this.submenuregistrarcompra.IconSize = 16;
+            this.submenuregistrarcompra.Image = ((System.Drawing.Image)(resources.GetObject("submenuregistrarcompra.Image")));
+            this.submenuregistrarcompra.Name = "submenuregistrarcompra";
+            this.submenuregistrarcompra.Size = new System.Drawing.Size(129, 22);
+            this.submenuregistrarcompra.Text = "Registrar";
+            this.submenuregistrarcompra.Click += new System.EventHandler(this.submenuregistrarcompra_Click);
+            // 
+            // submenuverdetallecompra
+            // 
+            this.submenuverdetallecompra.Icon = FontAwesome.Sharp.IconChar.None;
+            this.submenuverdetallecompra.IconColor = System.Drawing.Color.Black;
+            this.submenuverdetallecompra.IconSize = 16;
+            this.submenuverdetallecompra.Image = ((System.Drawing.Image)(resources.GetObject("submenuverdetallecompra.Image")));
+            this.submenuverdetallecompra.Name = "submenuverdetallecompra";
+            this.submenuverdetallecompra.Size = new System.Drawing.Size(129, 22);
+            this.submenuverdetallecompra.Text = "Ver Detalle";
+            this.submenuverdetallecompra.Click += new System.EventHandler(this.submenuverdetallecompra_Click);
             // 
             // menuclientes
             // 
@@ -184,19 +228,19 @@ namespace CapaPresentacion
             this.menuproveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuproveedores.Click += new System.EventHandler(this.menuproveedores_Click);
             // 
-            // iconMenuItem1
+            // menureportes
             // 
-            this.iconMenuItem1.AutoSize = false;
-            this.iconMenuItem1.Icon = FontAwesome.Sharp.IconChar.BarChart;
-            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem1.IconSize = 50;
-            this.iconMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("iconMenuItem1.Image")));
-            this.iconMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.iconMenuItem1.Name = "iconMenuItem1";
-            this.iconMenuItem1.Size = new System.Drawing.Size(80, 69);
-            this.iconMenuItem1.Text = "Reportes";
-            this.iconMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.iconMenuItem1.Click += new System.EventHandler(this.iconMenuItem1_Click);
+            this.menureportes.AutoSize = false;
+            this.menureportes.Icon = FontAwesome.Sharp.IconChar.BarChart;
+            this.menureportes.IconColor = System.Drawing.Color.Black;
+            this.menureportes.IconSize = 50;
+            this.menureportes.Image = ((System.Drawing.Image)(resources.GetObject("menureportes.Image")));
+            this.menureportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.menureportes.Name = "menureportes";
+            this.menureportes.Size = new System.Drawing.Size(80, 69);
+            this.menureportes.Text = "Reportes";
+            this.menureportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menureportes.Click += new System.EventHandler(this.iconMenuItem1_Click);
             // 
             // menuacercade
             // 
@@ -269,50 +313,6 @@ namespace CapaPresentacion
             this.contenedor.Size = new System.Drawing.Size(799, 333);
             this.contenedor.TabIndex = 6;
             // 
-            // submenuregistrarventa
-            // 
-            this.submenuregistrarventa.Icon = FontAwesome.Sharp.IconChar.None;
-            this.submenuregistrarventa.IconColor = System.Drawing.Color.Black;
-            this.submenuregistrarventa.IconSize = 16;
-            this.submenuregistrarventa.Image = ((System.Drawing.Image)(resources.GetObject("submenuregistrarventa.Image")));
-            this.submenuregistrarventa.Name = "submenuregistrarventa";
-            this.submenuregistrarventa.Size = new System.Drawing.Size(184, 26);
-            this.submenuregistrarventa.Text = "Registrar";
-            this.submenuregistrarventa.Click += new System.EventHandler(this.submenuregistrarventa_Click);
-            // 
-            // submenuverdetalleventa
-            // 
-            this.submenuverdetalleventa.Icon = FontAwesome.Sharp.IconChar.None;
-            this.submenuverdetalleventa.IconColor = System.Drawing.Color.Black;
-            this.submenuverdetalleventa.IconSize = 16;
-            this.submenuverdetalleventa.Image = ((System.Drawing.Image)(resources.GetObject("submenuverdetalleventa.Image")));
-            this.submenuverdetalleventa.Name = "submenuverdetalleventa";
-            this.submenuverdetalleventa.Size = new System.Drawing.Size(184, 26);
-            this.submenuverdetalleventa.Text = "Ver Detalle";
-            this.submenuverdetalleventa.Click += new System.EventHandler(this.submenuverdetalleventa_Click);
-            // 
-            // submenuregistrarcompra
-            // 
-            this.submenuregistrarcompra.Icon = FontAwesome.Sharp.IconChar.None;
-            this.submenuregistrarcompra.IconColor = System.Drawing.Color.Black;
-            this.submenuregistrarcompra.IconSize = 16;
-            this.submenuregistrarcompra.Image = ((System.Drawing.Image)(resources.GetObject("submenuregistrarcompra.Image")));
-            this.submenuregistrarcompra.Name = "submenuregistrarcompra";
-            this.submenuregistrarcompra.Size = new System.Drawing.Size(184, 26);
-            this.submenuregistrarcompra.Text = "Registrar";
-            this.submenuregistrarcompra.Click += new System.EventHandler(this.submenuregistrarcompra_Click);
-            // 
-            // submenuverdetallecompra
-            // 
-            this.submenuverdetallecompra.Icon = FontAwesome.Sharp.IconChar.None;
-            this.submenuverdetallecompra.IconColor = System.Drawing.Color.Black;
-            this.submenuverdetallecompra.IconSize = 16;
-            this.submenuverdetallecompra.Image = ((System.Drawing.Image)(resources.GetObject("submenuverdetallecompra.Image")));
-            this.submenuverdetallecompra.Name = "submenuverdetallecompra";
-            this.submenuverdetallecompra.Size = new System.Drawing.Size(184, 26);
-            this.submenuverdetallecompra.Text = "Ver Detalle";
-            this.submenuverdetallecompra.Click += new System.EventHandler(this.submenuverdetallecompra_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,7 +348,7 @@ namespace CapaPresentacion
         private FontAwesome.Sharp.IconMenuItem menuproveedores;
         private FontAwesome.Sharp.IconMenuItem menuacercade;
         private System.Windows.Forms.Label label1;
-        private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
+        private FontAwesome.Sharp.IconMenuItem menureportes;
         private System.Windows.Forms.Label lUsuario;
         private System.Windows.Forms.Label lblusuario;
         private FontAwesome.Sharp.IconMenuItem submenucategoria;
