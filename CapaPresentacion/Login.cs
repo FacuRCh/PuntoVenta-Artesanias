@@ -35,7 +35,7 @@ namespace CapaPresentacion
             {
                 MessageBox.Show("Bienvenido", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //Form1 sería el formulario de Inicio
-                Form1 form = new Form1();
+                Form1 form = new Form1(ousuario);
                 form.Show();
                 this.Hide();
                 form.FormClosing += frm_closing;
@@ -52,6 +52,11 @@ namespace CapaPresentacion
             txtdocumento.Text = "";
             txtcontraseña.Text = "";
             this.Show();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

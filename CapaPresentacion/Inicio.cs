@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CapaEntidad;
 namespace CapaPresentacion
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        private static Usuario usuarioActual;
+        public Form1(Usuario objusuario)
         {
+            usuarioActual = objusuario;
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
