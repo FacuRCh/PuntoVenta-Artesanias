@@ -33,6 +33,8 @@ namespace CapaPresentacion
             this.menu = new System.Windows.Forms.MenuStrip();
             this.menuusuario = new FontAwesome.Sharp.IconMenuItem();
             this.menumantenedor = new FontAwesome.Sharp.IconMenuItem();
+            this.iconMenuItem2 = new FontAwesome.Sharp.IconMenuItem();
+            this.iconMenuItem3 = new FontAwesome.Sharp.IconMenuItem();
             this.menuventas = new FontAwesome.Sharp.IconMenuItem();
             this.menucompras = new FontAwesome.Sharp.IconMenuItem();
             this.menuclientes = new FontAwesome.Sharp.IconMenuItem();
@@ -43,8 +45,7 @@ namespace CapaPresentacion
             this.label1 = new System.Windows.Forms.Label();
             this.lUsuario = new System.Windows.Forms.Label();
             this.lblusuario = new System.Windows.Forms.Label();
-            this.iconMenuItem2 = new FontAwesome.Sharp.IconMenuItem();
-            this.iconMenuItem3 = new FontAwesome.Sharp.IconMenuItem();
+            this.contenedor = new System.Windows.Forms.Panel();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +64,7 @@ namespace CapaPresentacion
             this.menu.Location = new System.Drawing.Point(0, 50);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(800, 73);
+            this.menu.Size = new System.Drawing.Size(799, 73);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -79,6 +80,7 @@ namespace CapaPresentacion
             this.menuusuario.Size = new System.Drawing.Size(80, 69);
             this.menuusuario.Text = "Usuarios";
             this.menuusuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuusuario.Click += new System.EventHandler(this.menuusuario_Click);
             // 
             // menumantenedor
             // 
@@ -95,6 +97,26 @@ namespace CapaPresentacion
             this.menumantenedor.Size = new System.Drawing.Size(80, 69);
             this.menumantenedor.Text = "Matenedor";
             this.menumantenedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // iconMenuItem2
+            // 
+            this.iconMenuItem2.Icon = FontAwesome.Sharp.IconChar.Star;
+            this.iconMenuItem2.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem2.IconSize = 16;
+            this.iconMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("iconMenuItem2.Image")));
+            this.iconMenuItem2.Name = "iconMenuItem2";
+            this.iconMenuItem2.Size = new System.Drawing.Size(184, 26);
+            this.iconMenuItem2.Text = "Categoria";
+            // 
+            // iconMenuItem3
+            // 
+            this.iconMenuItem3.Icon = FontAwesome.Sharp.IconChar.Star;
+            this.iconMenuItem3.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem3.IconSize = 16;
+            this.iconMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("iconMenuItem3.Image")));
+            this.iconMenuItem3.Name = "iconMenuItem3";
+            this.iconMenuItem3.Size = new System.Drawing.Size(184, 26);
+            this.iconMenuItem3.Text = "Producto";
             // 
             // menuventas
             // 
@@ -183,7 +205,7 @@ namespace CapaPresentacion
             this.menutitulo.Name = "menutitulo";
             this.menutitulo.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menutitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menutitulo.Size = new System.Drawing.Size(800, 50);
+            this.menutitulo.Size = new System.Drawing.Size(799, 50);
             this.menutitulo.TabIndex = 1;
             this.menutitulo.Text = "menuStrip2";
             // 
@@ -225,31 +247,19 @@ namespace CapaPresentacion
             this.lblusuario.TabIndex = 5;
             this.lblusuario.Text = "lblusuario";
             // 
-            // iconMenuItem2
+            // contenedor
             // 
-            this.iconMenuItem2.Icon = FontAwesome.Sharp.IconChar.Star;
-            this.iconMenuItem2.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem2.IconSize = 16;
-            this.iconMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("iconMenuItem2.Image")));
-            this.iconMenuItem2.Name = "iconMenuItem2";
-            this.iconMenuItem2.Size = new System.Drawing.Size(184, 26);
-            this.iconMenuItem2.Text = "Categoria";
-            // 
-            // iconMenuItem3
-            // 
-            this.iconMenuItem3.Icon = FontAwesome.Sharp.IconChar.Star;
-            this.iconMenuItem3.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem3.IconSize = 16;
-            this.iconMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("iconMenuItem3.Image")));
-            this.iconMenuItem3.Name = "iconMenuItem3";
-            this.iconMenuItem3.Size = new System.Drawing.Size(184, 26);
-            this.iconMenuItem3.Text = "Producto";
+            this.contenedor.Location = new System.Drawing.Point(0, 126);
+            this.contenedor.Name = "contenedor";
+            this.contenedor.Size = new System.Drawing.Size(799, 333);
+            this.contenedor.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(799, 459);
+            this.Controls.Add(this.contenedor);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.lUsuario);
             this.Controls.Add(this.label1);
@@ -284,6 +294,7 @@ namespace CapaPresentacion
         private System.Windows.Forms.Label lblusuario;
         private FontAwesome.Sharp.IconMenuItem iconMenuItem2;
         private FontAwesome.Sharp.IconMenuItem iconMenuItem3;
+        private System.Windows.Forms.Panel contenedor;
     }
 }
 
