@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using CapaEntidad;
+using CapaNegocio;
+
 namespace CapaPresentacion
 {
     public partial class Login : Form
@@ -24,6 +27,9 @@ namespace CapaPresentacion
 
         private void btningresar_Click(object sender, EventArgs e)
         {
+            Usuario ousuario = new CN_Usuario().Listar().Where(u = u.Documento == txtdocumento.Text && u.Clave == txtcontraseña.Text).FirstOrDefault();
+
+            //Form1 sería el formulario de Inicio
             Form1 form = new Form1();
             form.Show();
             this.Hide();
