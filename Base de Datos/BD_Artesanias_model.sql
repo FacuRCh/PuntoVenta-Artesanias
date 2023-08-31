@@ -1,6 +1,8 @@
 CREATE DATABASE DB_ARTESANIAS
 Go
 
+Drop Database DB_ARTESANIAS
+
 Use DB_ARTESANIAS 
 Go
 
@@ -34,7 +36,8 @@ go
 Create Table Cliente(
 IdCliente int primary key identity,
 Documento varchar(50),
-NombreCompleto varchar(50),
+Nombre varchar(50),
+Apellido varchar(50),
 Correo varchar(50),
 Telefono varchar(50),
 Estado bit,
@@ -45,7 +48,8 @@ go
 Create Table Usuario(
 IdUsuario int primary key identity,
 Documento varchar(50),
-NombreCompleto varchar(50),
+Nombre varchar(50),
+Apellido varchar(50),
 Correo varchar(50),
 Clave varchar(50),
 IdRol int references Rol(IdRol),
@@ -82,7 +86,8 @@ IdCompra int primary key identity,
 IdUsuario int references Usuario(IdUsuario),
 IdProveedor int references Proveedor(IdProveedor),
 Documento varchar(50),
-NombreCompleto varchar(50),
+Nombre varchar(50),
+Apellido varchar(50),
 Correo varchar(50),
 Telefono varchar(50),
 MontoTotal decimal (10,2),
@@ -109,6 +114,7 @@ TipoDocumento varchar(50),
 NumeroDocumento varchar(50),
 DocumentoCliente varchar(50),
 NombreCliente varchar(50),
+ApellidoCliente varchar(50),
 MontoPago decimal(10,2),
 MontoCambio decimal(10,2),
 MontoTotal decimal(10,2),
