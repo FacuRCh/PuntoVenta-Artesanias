@@ -50,6 +50,18 @@ namespace CapaPresentacion
             this.botonguardarusuario = new FontAwesome.Sharp.IconButton();
             this.botoneliminarusuario = new FontAwesome.Sharp.IconButton();
             this.botoneditarusuario = new FontAwesome.Sharp.IconButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label10 = new System.Windows.Forms.Label();
+            this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdRol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,7 +71,7 @@ namespace CapaPresentacion
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 503);
+            this.label1.Size = new System.Drawing.Size(224, 503);
             this.label1.TabIndex = 0;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -158,7 +170,7 @@ namespace CapaPresentacion
             this.comboBoxRol.Location = new System.Drawing.Point(12, 311);
             this.comboBoxRol.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxRol.Name = "comboBoxRol";
-            this.comboBoxRol.Size = new System.Drawing.Size(230, 21);
+            this.comboBoxRol.Size = new System.Drawing.Size(191, 21);
             this.comboBoxRol.TabIndex = 9;
             // 
             // comboBoxEstado
@@ -168,7 +180,7 @@ namespace CapaPresentacion
             this.comboBoxEstado.Location = new System.Drawing.Point(13, 350);
             this.comboBoxEstado.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEstado.Name = "comboBoxEstado";
-            this.comboBoxEstado.Size = new System.Drawing.Size(230, 21);
+            this.comboBoxEstado.Size = new System.Drawing.Size(191, 21);
             this.comboBoxEstado.TabIndex = 10;
             // 
             // textBox1
@@ -176,7 +188,7 @@ namespace CapaPresentacion
             this.textBox1.Location = new System.Drawing.Point(12, 38);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 20);
+            this.textBox1.Size = new System.Drawing.Size(191, 20);
             this.textBox1.TabIndex = 11;
             // 
             // textBox2
@@ -184,7 +196,7 @@ namespace CapaPresentacion
             this.textBox2.Location = new System.Drawing.Point(13, 275);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(230, 20);
+            this.textBox2.Size = new System.Drawing.Size(191, 20);
             this.textBox2.TabIndex = 12;
             // 
             // textBox3
@@ -192,7 +204,7 @@ namespace CapaPresentacion
             this.textBox3.Location = new System.Drawing.Point(13, 224);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(230, 20);
+            this.textBox3.Size = new System.Drawing.Size(191, 20);
             this.textBox3.TabIndex = 13;
             // 
             // textBox4
@@ -200,7 +212,7 @@ namespace CapaPresentacion
             this.textBox4.Location = new System.Drawing.Point(12, 171);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(230, 20);
+            this.textBox4.Size = new System.Drawing.Size(191, 20);
             this.textBox4.TabIndex = 14;
             // 
             // textBox5
@@ -208,7 +220,7 @@ namespace CapaPresentacion
             this.textBox5.Location = new System.Drawing.Point(12, 125);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(230, 20);
+            this.textBox5.Size = new System.Drawing.Size(191, 20);
             this.textBox5.TabIndex = 15;
             // 
             // textBox6
@@ -216,7 +228,7 @@ namespace CapaPresentacion
             this.textBox6.Location = new System.Drawing.Point(12, 82);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(230, 20);
+            this.textBox6.Size = new System.Drawing.Size(191, 20);
             this.textBox6.TabIndex = 16;
             // 
             // botonguardarusuario
@@ -228,7 +240,7 @@ namespace CapaPresentacion
             this.botonguardarusuario.IconSize = 16;
             this.botonguardarusuario.Image = ((System.Drawing.Image)(resources.GetObject("botonguardarusuario.Image")));
             this.botonguardarusuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.botonguardarusuario.Location = new System.Drawing.Point(79, 375);
+            this.botonguardarusuario.Location = new System.Drawing.Point(61, 375);
             this.botonguardarusuario.Margin = new System.Windows.Forms.Padding(2);
             this.botonguardarusuario.Name = "botonguardarusuario";
             this.botonguardarusuario.Size = new System.Drawing.Size(85, 32);
@@ -247,7 +259,7 @@ namespace CapaPresentacion
             this.botoneliminarusuario.IconSize = 16;
             this.botoneliminarusuario.Image = ((System.Drawing.Image)(resources.GetObject("botoneliminarusuario.Image")));
             this.botoneliminarusuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.botoneliminarusuario.Location = new System.Drawing.Point(79, 461);
+            this.botoneliminarusuario.Location = new System.Drawing.Point(61, 461);
             this.botoneliminarusuario.Margin = new System.Windows.Forms.Padding(2);
             this.botoneliminarusuario.Name = "botoneliminarusuario";
             this.botoneliminarusuario.Size = new System.Drawing.Size(85, 31);
@@ -266,7 +278,7 @@ namespace CapaPresentacion
             this.botoneditarusuario.IconSize = 16;
             this.botoneditarusuario.Image = ((System.Drawing.Image)(resources.GetObject("botoneditarusuario.Image")));
             this.botoneditarusuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.botoneditarusuario.Location = new System.Drawing.Point(79, 420);
+            this.botoneditarusuario.Location = new System.Drawing.Point(61, 420);
             this.botoneditarusuario.Margin = new System.Windows.Forms.Padding(2);
             this.botoneditarusuario.Name = "botoneditarusuario";
             this.botoneditarusuario.Size = new System.Drawing.Size(85, 30);
@@ -277,12 +289,89 @@ namespace CapaPresentacion
             this.botoneditarusuario.UseVisualStyleBackColor = false;
             this.botoneditarusuario.Click += new System.EventHandler(this.botoneditarusuario_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdUsuario,
+            this.Documento,
+            this.Nombre,
+            this.Apellido,
+            this.Correo,
+            this.Clave,
+            this.IdRol,
+            this.Rol,
+            this.Estado});
+            this.dataGridView1.Location = new System.Drawing.Point(255, 102);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(944, 389);
+            this.dataGridView1.TabIndex = 20;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(255, 42);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(944, 44);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Lista de Usuarios";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // IdUsuario
+            // 
+            this.IdUsuario.HeaderText = "IdUsuario";
+            this.IdUsuario.Name = "IdUsuario";
+            this.IdUsuario.Visible = false;
+            // 
+            // Documento
+            // 
+            this.Documento.HeaderText = "Nro Documento";
+            this.Documento.Name = "Documento";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.Name = "Correo";
+            // 
+            // Clave
+            // 
+            this.Clave.HeaderText = "Clave";
+            this.Clave.Name = "Clave";
+            // 
+            // IdRol
+            // 
+            this.IdRol.HeaderText = "IdRol";
+            this.IdRol.Name = "IdRol";
+            // 
+            // Rol
+            // 
+            this.Rol.HeaderText = "Rol";
+            this.Rol.Name = "Rol";
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(754, 503);
+            this.ClientSize = new System.Drawing.Size(1220, 503);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.botoneditarusuario);
             this.Controls.Add(this.botoneliminarusuario);
             this.Controls.Add(this.botonguardarusuario);
@@ -305,6 +394,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label1);
             this.Name = "frmUsuarios";
             this.Text = "frmUsuarios";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,5 +422,16 @@ namespace CapaPresentacion
         private FontAwesome.Sharp.IconButton botonguardarusuario;
         private FontAwesome.Sharp.IconButton botoneliminarusuario;
         private FontAwesome.Sharp.IconButton botoneditarusuario;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Clave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdRol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.Label label10;
     }
 }
