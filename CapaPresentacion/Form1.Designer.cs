@@ -309,9 +309,10 @@ namespace CapaPresentacion
             // contenedor
             // 
             this.contenedor.AutoSize = true;
-            this.contenedor.Location = new System.Drawing.Point(0, 126);
+            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contenedor.Location = new System.Drawing.Point(0, 123);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(799, 521);
+            this.contenedor.Size = new System.Drawing.Size(799, 527);
             this.contenedor.TabIndex = 6;
             // 
             // Inicio
