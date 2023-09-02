@@ -13,12 +13,12 @@ using FontAwesome.Sharp;
 
 namespace CapaPresentacion
 {
-    public partial class Form1 : Form
+    public partial class Inicio : Form
     {
         private static Usuario usuarioActual;
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
-        public Form1(Usuario objusuario)
+        public Inicio(Usuario objusuario)
         {
             usuarioActual = objusuario;
             InitializeComponent();

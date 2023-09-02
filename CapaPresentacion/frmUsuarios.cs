@@ -17,6 +17,9 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        
+        private void botoneditarusuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

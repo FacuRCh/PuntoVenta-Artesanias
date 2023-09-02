@@ -1,7 +1,7 @@
 ﻿
 namespace CapaPresentacion
 {
-    partial class Form1
+    partial class Inicio
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.menu = new System.Windows.Forms.MenuStrip();
             this.menuusuario = new FontAwesome.Sharp.IconMenuItem();
             this.menumantenedor = new FontAwesome.Sharp.IconMenuItem();
@@ -308,16 +308,18 @@ namespace CapaPresentacion
             // 
             // contenedor
             // 
+            this.contenedor.AutoSize = true;
             this.contenedor.Location = new System.Drawing.Point(0, 126);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(799, 333);
+            this.contenedor.Size = new System.Drawing.Size(799, 521);
             this.contenedor.TabIndex = 6;
             // 
-            // Form1
+            // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 459);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(799, 650);
             this.Controls.Add(this.contenedor);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.lUsuario);
@@ -325,9 +327,9 @@ namespace CapaPresentacion
             this.Controls.Add(this.menu);
             this.Controls.Add(this.menutitulo);
             this.MainMenuStrip = this.menu;
-            this.Name = "Form1";
+            this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Punto de Venta";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();

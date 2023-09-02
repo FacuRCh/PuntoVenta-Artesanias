@@ -35,7 +35,7 @@ namespace CapaPresentacion
             {
                 MessageBox.Show("Bienvenido", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //Form1 sería el formulario de Inicio
-                Form1 form = new Form1(ousuario);
+                Inicio form = new Inicio(ousuario);
                 form.Show();
                 this.Hide();
                 form.FormClosing += frm_closing;
