@@ -48,11 +48,24 @@ namespace CapaPresentacion
             cbobusqueda.ValueMember = "Valor";
             cbobusqueda.SelectedIndex = 0;
 
+
+            List<Usuario> listaUsuario = new CN_Usuario().Listar();
+            foreach (Usuario item in listaUsuario)
+            {
+                dgvdata.Rows.Add(new object[] {"", item.IdUsuario, item.Documento, item.Nombre, item.Apellido, item.Correo, item.Clave,
+                item.IdRol.IdRol,
+                item.IdRol.Descripcion,
+                item.Estado == true ? 1 : 0 ,
+                item.Estado == true ? "Activo" : "No Activo"
+            }) ;
+
+            }
+           
         }
 
         private void botonguardarusuario_Click(object sender, EventArgs e)
         {
-            dgvdata.Rows.Add(new object[] {"", txtid.Text, txtdocumento.Text, txtnombre.Text, txtapellido.Text, txtcorreo.Text, txtcontraseña,
+            dgvdata.Rows.Add(new object[] {"", txtdocumento.Text, txtdocumento.Text, txtnombre.Text, txtapellido.Text, txtcorreo.Text, txtcontraseña.Text,
                 ((OpcionCombo)cborol.SelectedItem).Valor.ToString(),
                 ((OpcionCombo)cborol.SelectedItem).Texto.ToString(),
                 ((OpcionCombo)cboestado.SelectedItem).Valor.ToString(),
@@ -74,6 +87,42 @@ namespace CapaPresentacion
             cborol.SelectedIndex = 0;
             cboestado.SelectedIndex = 0;
         }
-     
+
+        private void dgvdata_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if(e.RowIndex < 0) 
+            { return; }
+
+            if (e.ColumnIndex == 0)
+            {
+                e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+                var w = Properties.Resources.check.Width;
+                var h = Properties.Resources.check.Height;
+                var x = e.CellBounds.Left + (e.CellBounds.Width - w)/2 ;
+                var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
+
+                e.Graphics.DrawImage(Properties.Resources.check, new Rectangle(x, y, w, h));
+                e.Handled = true;
+            }
+
+        }
+
+        private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(dgvdata.Columns[e.ColumnIndex].Name == "btnseleccionar")
+            {
+                int indice = e.RowIndex;
+                if(indice >= 0)
+                {
+                    txtid.Text = dgvdata.Rows[indice].Cells["IdUsuario"].Value.ToString();
+                    txtdocumento.Text = dgvdata.Rows[indice].Cells["Nro Documento"].Value.ToString();
+                    txtnombre.Text = dgvdata.Rows[indice].Cells["Nombre"].Value.ToString();
+                    txtapellido.Text = dgvdata.Rows[indice].Cells["Apellido"].Value.ToString();
+                    txtcontraseña.Text = dgvdata.Rows[indice].Cells["Clave"].Value.ToString();
+                    txtconfirmarcontraseña.Text = dgvdata.Rows[indice].Cells["Clave"].Value.ToString();
+
+                }
+            }
+        }
     }
 }

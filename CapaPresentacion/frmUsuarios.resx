@@ -117,32 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="botonguardarusuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        dAAAEnQB3mYfeAAAAJBJREFUOE/dkdENgCAMRBmAOViABZzARRzFFZyBJdzCYdCrOYwiBX9MjJdcCvX1
-        IGi+oRhjv1Yk34mWBWAA51EDB8Kp36HOsB5CUAvwsMVaD0mgDDJgkR73XhiG7ME3CcwAJzWzJSZcPYBb
-        VU9uMKEWRa4ZUARS/90AeITT6+c+/gpHrsLpVm7QMgIcR/4jYzYGJEE0v6tlQQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="botoneliminarusuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        dAAAEnQB3mYfeAAAAIZJREFUOE9joAn49++fGhCvQ8J+UCniAEzT////jUEYyL4FlcINQBqgGtcBNf2H
-        sZH4h6H8KqgWTACUzAbZCOWiAJA4yAAoFzuAGQCkQa6RBNFo4kQbAHI2XAOQDQIjygAoFwUQa0AMEM8B
-        GYQFdwPxHKhS3ACoCGQINgNAruOBKhs+gIEBAOyrKaXQzJvNAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="botoneditarusuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAKBJREFUOE/tkl0NgDAQgycAAxjAAAZQgBEcYAELaJgJXEzMRps0/Gy3kBAe+ZKG
-        u/R6WzLcp6SU+lwxxlZ2HQ5BAfKGVixqVG+sFTuBMcEY1N64hEfUiV9ZJ1rQqz1QeIF4C2IeYi5Afwuz
-        llWSL1B4hcJjmOQL2EOdvrzFCNVfg4PGAr7KrN5f/QKYA4YWDhmiFzRaR4M82dLzz/TzFud2um8Izcda
-        CtAAAAAASUVORK5CYII=
-</value>
-  </data>
   <metadata name="btnseleccionar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -176,6 +150,7 @@
   <metadata name="EstadoValor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnlimpiar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -192,6 +167,31 @@
         SacqlXP+Sjk9w6bbevqTi+lp+gQtprupC8zeJm8Uz7MpDcG66KuJVacqvZp0YeTHDjKl/SZkJZgWa1Cp
         kjYXpeyv9VRHM2X7P3mYMoaqsGlICwqutaOxoBRURzBtRVMWJTPGk8JvGpEA7b1NFpQCU1Ua5d9plynQ
         MouiPb4kAj/rbtMa3pRkh4DpZDqkwtNSyhdSqUhshuhtKwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="botoneditarusuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAKBJREFUOE/tkl0NgDAQgycAAxjAAAZQgBEcYAELaJgJXEzMRps0/Gy3kBAe+ZKG
+        u/R6WzLcp6SU+lwxxlZ2HQ5BAfKGVixqVG+sFTuBMcEY1N64hEfUiV9ZJ1rQqz1QeIF4C2IeYi5Afwuz
+        llWSL1B4hcJjmOQL2EOdvrzFCNVfg4PGAr7KrN5f/QKYA4YWDhmiFzRaR4M82dLzz/TzFud2um8Izcda
+        CtAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="botoneliminarusuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        dAAAEnQB3mYfeAAAAIZJREFUOE9joAn49++fGhCvQ8J+UCniAEzT////jUEYyL4FlcINQBqgGtcBNf2H
+        sZH4h6H8KqgWTACUzAbZCOWiAJA4yAAoFzuAGQCkQa6RBNFo4kQbAHI2XAOQDQIjygAoFwUQa0AMEM8B
+        GYQFdwPxHKhS3ACoCGQINgNAruOBKhs+gIEBAOyrKaXQzJvNAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="botonguardarusuario.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        dAAAEnQB3mYfeAAAAJBJREFUOE/dkdENgCAMRBmAOViABZzARRzFFZyBJdzCYdCrOYwiBX9MjJdcCvX1
+        IGi+oRhjv1Yk34mWBWAA51EDB8Kp36HOsB5CUAvwsMVaD0mgDDJgkR73XhiG7ME3CcwAJzWzJSZcPYBb
+        VU9uMKEWRa4ZUARS/90AeITT6+c+/gpHrsLpVm7QMgIcR/4jYzYGJEE0v6tlQQAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

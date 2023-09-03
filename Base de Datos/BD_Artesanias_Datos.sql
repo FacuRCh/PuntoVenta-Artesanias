@@ -1,5 +1,8 @@
 
-select * from Usuario
+select u.IdUsuario, u.Documento, u.Nombre, u.Apellido, u.Correo, u.Clave, u.Estado from usuario u
+inner join Rol r on r.IdRol = u.IdRol
+
+/*select * from Usuario
 
 select * from Rol
 
@@ -40,4 +43,4 @@ insert into Permiso(IdRol,NombreMenu) values
 select p.IdRol, p.NombreMenu from Permiso p
 inner join Rol r on r.IdRol = p.IdRol
 inner join Usuario u on u.IdRol = r.IdRol
-where u.IdUsuario = 1
+where u.IdUsuario = 1*/
