@@ -38,6 +38,7 @@ namespace CapaPresentacion
             }
 
             lblusuario.Text = usuarioActual.Nombre;
+            anchoOriginalPanelPrincipal = contenedor.Width;
         }
 
         private void AbrirFormulario(IconMenuItem menu,Form formulario)
@@ -70,32 +71,32 @@ namespace CapaPresentacion
 
         private void submenucategoria_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menumantenedor, new frmCategoria());
+            AbrirFormulario(submenucategoria, new frmCategoria());
         }
 
         private void submenuproducto_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menumantenedor, new frmProducto());
+            AbrirFormulario(submenuproducto, new frmProducto());
         }
 
         private void submenuregistrarventa_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menuventas, new frmVentas());
+            AbrirFormulario(submenuregistrarventa, new frmVentas());
         }
 
         private void submenuverdetalleventa_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menuventas, new frmDetalleVenta());
+            AbrirFormulario(submenuverdetalleventa, new frmDetalleVenta());
         }
 
         private void submenuregistrarcompra_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menucompras, new frmCompras());
+            AbrirFormulario(submenuregistrarcompra, new frmCompras());
         }
 
         private void submenuverdetallecompra_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menucompras, new frmDetalleCompra());
+            AbrirFormulario(submenuverdetallecompra, new frmDetalleCompra());
         }
 
         private void menuclientes_Click(object sender, EventArgs e)
@@ -113,5 +114,65 @@ namespace CapaPresentacion
             AbrirFormulario((IconMenuItem)sender, new frmReportes());
         }
 
+
+        private bool menuContraido = false;
+        private int anchoOriginalPanelPrincipal;
+
+
+        private void btnslide_Click(object sender, EventArgs e)
+        {
+            if (menuContraido)
+            {
+                MenuVertical.Width = 250;
+                contenedor.Left += 180;
+                contenedor.Width = anchoOriginalPanelPrincipal; // Restaura el ancho original del panel principal
+            }
+            else
+            {
+                MenuVertical.Width = 70;
+                contenedor.Left -= 180;
+                contenedor.Width = anchoOriginalPanelPrincipal + 180; // Aumenta el ancho del panel principal hacia la derecha
+            }
+
+            menuContraido = !menuContraido; // Cambia el estado del menú (contraído/expandido)
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnmaxvent_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnminvent.Visible = true;
+            btnmaxvent.Visible = false;
+        }
+
+        private void btnminvent_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnminvent.Visible = false;
+            btnmaxvent.Visible = true;
+        }
+
+        private void btnmin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void menuacercade_Click(object sender, EventArgs e)
+        {
+            // Crear el mensaje con la información de tu empresa
+            string mensaje = "Información de Mi Empresa:\n\n";
+            mensaje += "Nombre de la Empresa: Mi Empresa S.A.\n";
+            mensaje += "Descripción: Somos una empresa dedicada a...\n";
+            mensaje += "Encargado: Juan Pérez\n";
+            mensaje += "Correo de Contacto: juan.perez@miempresa.com\n";
+            mensaje += "Teléfono de Contacto: +1234567890\n";
+
+            // Mostrar el MessageBox
+            MessageBox.Show(mensaje, "Acerca de Mi Empresa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
