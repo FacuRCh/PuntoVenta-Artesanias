@@ -115,9 +115,10 @@ namespace CapaPresentacion
                 if(indice >= 0)
                 {
                     txtid.Text = dgvdata.Rows[indice].Cells["IdUsuario"].Value.ToString();
-                    txtdocumento.Text = dgvdata.Rows[indice].Cells["Nro Documento"].Value.ToString();
+                    txtdocumento.Text = dgvdata.Rows[indice].Cells["Documento"].Value.ToString();
                     txtnombre.Text = dgvdata.Rows[indice].Cells["Nombre"].Value.ToString();
                     txtapellido.Text = dgvdata.Rows[indice].Cells["Apellido"].Value.ToString();
+                    txtcorreo.Text = dgvdata.Rows[indice].Cells["Correo"].Value.ToString();
                     txtcontraseña.Text = dgvdata.Rows[indice].Cells["Clave"].Value.ToString();
                     txtconfirmarcontraseña.Text = dgvdata.Rows[indice].Cells["Clave"].Value.ToString();
 

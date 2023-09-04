@@ -123,6 +123,7 @@ namespace CapaPresentacion
             // menu
             // 
             this.menu.AutoSize = false;
+            this.menu.BackColor = System.Drawing.Color.Transparent;
             this.menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.menu.ImageScalingSize = new System.Drawing.Size(10, 20);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -138,7 +139,7 @@ namespace CapaPresentacion
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(250, 650);
+            this.menu.Size = new System.Drawing.Size(253, 650);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -147,7 +148,7 @@ namespace CapaPresentacion
             this.menuusuario.AutoSize = false;
             this.menuusuario.Icon = FontAwesome.Sharp.IconChar.UserPlus;
             this.menuusuario.IconColor = System.Drawing.Color.Black;
-            this.menuusuario.IconSize = 23;
+            this.menuusuario.IconSize = 25;
             this.menuusuario.Image = ((System.Drawing.Image)(resources.GetObject("menuusuario.Image")));
             this.menuusuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menuusuario.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -165,7 +166,7 @@ namespace CapaPresentacion
             this.submenuproducto});
             this.menumantenedor.Icon = FontAwesome.Sharp.IconChar.Cogs;
             this.menumantenedor.IconColor = System.Drawing.Color.Black;
-            this.menumantenedor.IconSize = 23;
+            this.menumantenedor.IconSize = 25;
             this.menumantenedor.Image = ((System.Drawing.Image)(resources.GetObject("menumantenedor.Image")));
             this.menumantenedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menumantenedor.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -205,7 +206,7 @@ namespace CapaPresentacion
             this.submenuverdetalleventa});
             this.menuventas.Icon = FontAwesome.Sharp.IconChar.Tags;
             this.menuventas.IconColor = System.Drawing.Color.Black;
-            this.menuventas.IconSize = 23;
+            this.menuventas.IconSize = 25;
             this.menuventas.Image = ((System.Drawing.Image)(resources.GetObject("menuventas.Image")));
             this.menuventas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menuventas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -244,7 +245,7 @@ namespace CapaPresentacion
             this.submenuverdetallecompra});
             this.menucompras.Icon = FontAwesome.Sharp.IconChar.ShoppingCart;
             this.menucompras.IconColor = System.Drawing.Color.Black;
-            this.menucompras.IconSize = 23;
+            this.menucompras.IconSize = 25;
             this.menucompras.Image = ((System.Drawing.Image)(resources.GetObject("menucompras.Image")));
             this.menucompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menucompras.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -280,7 +281,7 @@ namespace CapaPresentacion
             this.menuclientes.AutoSize = false;
             this.menuclientes.Icon = FontAwesome.Sharp.IconChar.UniversalAccess;
             this.menuclientes.IconColor = System.Drawing.Color.Black;
-            this.menuclientes.IconSize = 23;
+            this.menuclientes.IconSize = 25;
             this.menuclientes.Image = ((System.Drawing.Image)(resources.GetObject("menuclientes.Image")));
             this.menuclientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menuclientes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -295,7 +296,7 @@ namespace CapaPresentacion
             this.menuproveedores.AutoSize = false;
             this.menuproveedores.Icon = FontAwesome.Sharp.IconChar.Barcode;
             this.menuproveedores.IconColor = System.Drawing.Color.Black;
-            this.menuproveedores.IconSize = 23;
+            this.menuproveedores.IconSize = 25;
             this.menuproveedores.Image = ((System.Drawing.Image)(resources.GetObject("menuproveedores.Image")));
             this.menuproveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menuproveedores.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -310,7 +311,7 @@ namespace CapaPresentacion
             this.menureportes.AutoSize = false;
             this.menureportes.Icon = FontAwesome.Sharp.IconChar.BarChart;
             this.menureportes.IconColor = System.Drawing.Color.Black;
-            this.menureportes.IconSize = 23;
+            this.menureportes.IconSize = 25;
             this.menureportes.Image = ((System.Drawing.Image)(resources.GetObject("menureportes.Image")));
             this.menureportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menureportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -325,7 +326,7 @@ namespace CapaPresentacion
             this.menuacercade.AutoSize = false;
             this.menuacercade.Icon = FontAwesome.Sharp.IconChar.InfoCircle;
             this.menuacercade.IconColor = System.Drawing.Color.Black;
-            this.menuacercade.IconSize = 23;
+            this.menuacercade.IconSize = 25;
             this.menuacercade.Image = ((System.Drawing.Image)(resources.GetObject("menuacercade.Image")));
             this.menuacercade.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menuacercade.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
