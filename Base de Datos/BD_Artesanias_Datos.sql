@@ -1,5 +1,5 @@
 
-select u.IdUsuario, u.Documento, u.Nombre, u.Apellido, u.Correo, u.Clave, u.Estado from usuario u
+select u.IdUsuario, u.Documento, u.Nombre, u.Apellido, u.Correo, u.Clave, u.Estado, r.IdRol, r.Descripcion from usuario u
 inner join Rol r on r.IdRol = u.IdRol
 
 /*select * from Usuario
